@@ -6,19 +6,29 @@ from django.contrib.sites.models import Site
 from django.template import Context, Template
 
 
-class StaticAbsoluteTemplateTagTest(TestCase):
+class TemplateUrlToolkitTest(TestCase):
 
     def setUp(self) -> None:
         super().setUp()
-        self.site, _created = Site.objects.get_or_create(pk=1)
+        self.site, _created = Site.objects.update_or_create(pk=1, defaults={
+            'domain': 'www.mysite.com'
+        })
 
-    def test_rendered(self):
-        context = Context({'title': 'my_title'})
+    def test_static_absolute(self):
+        context = Context({})
         template_to_render = Template(
-            '{% load template_tags_django_url_toolkit %}'
-            '{% static_absolute title %}'
+            '{% load url_toolkit %}'
+            "{% static_absolute 'test/fb.png' %}"
         )
-        static_url = 'http://example.com/static/'
         rendered_template = template_to_render.render(context)
-        self.assertEqual(static_url + 'my_title', rendered_template)
+        self.assertEqual('http://www.mysite.com/static/test/fb.png', rendered_template)
+
+    def test_prepend_site(self):
+        context = Context({})
+        template_to_render = Template(
+            '{% load url_toolkit %}'
+            "{{ '/test/fb.png'|prepend_site }}"
+        )
+        rendered_template = template_to_render.render(context)
+        self.assertEqual('http://www.mysite.com/test/fb.png', rendered_template)
 

@@ -23,3 +23,8 @@ class StaticFilesAbsoluteNode(StaticNode):
 @register.tag('static_absolute')
 def do_static_absolute(parser, token):
     return StaticFilesAbsoluteNode.handle_token(parser, token)
+
+
+@register.filter
+def prepend_site(value):
+    return make_absolute_url(value)
