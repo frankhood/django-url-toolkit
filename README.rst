@@ -13,11 +13,6 @@ Django Url Tools
 
 A useful toolkit to manage urls and absolute paths in your django project
 
-Documentation
--------------
-
-The full documentation is at https://django-url-toolkit.readthedocs.io.
-
 Quickstart
 ----------
 
@@ -39,7 +34,10 @@ Add it to your `INSTALLED_APPS`:
 Features
 --------
 
-* TODO
+* static_absolute template_tag
+* append_querystring
+* get_current_site_absolute
+* make_absolute_url
 
 Running Tests
 -------------
