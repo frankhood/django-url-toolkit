@@ -37,8 +37,6 @@ Features
 * append_querystring
 * get_current_site_absolute
 * make_absolute_url
-
-Template tag and filters
 * static_absolute
 * prepend_site
 
