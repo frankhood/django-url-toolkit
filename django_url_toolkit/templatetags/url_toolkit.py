@@ -22,9 +22,17 @@ class StaticFilesAbsoluteNode(StaticNode):
 
 @register.tag('static_absolute')
 def do_static_absolute(parser, token):
+    """
+    '{% load url_toolkit %}'
+    "{% static_absolute 'test/fb.png' %}"
+    """
     return StaticFilesAbsoluteNode.handle_token(parser, token)
 
 
 @register.filter
 def prepend_site(value):
+    """
+    '{% load url_toolkit %}'
+    "{{ '/test/fb.png'|prepend_site }}"
+    """
     return make_absolute_url(value)

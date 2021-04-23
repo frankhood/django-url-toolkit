@@ -34,10 +34,21 @@ Add it to your `INSTALLED_APPS`:
 Features
 --------
 
-* static_absolute template_tag
 * append_querystring
 * get_current_site_absolute
 * make_absolute_url
+
+Template tag and filters
+* static_absolute
+* prepend_site
+
+Example of usage
+-------------
+.. code-block:: python
+
+    {% load url_toolkit %}'
+    {% static_absolute 'test/fb.png' %}
+    {{ '/test/fb.png'|prepend_site }}
 
 Running Tests
 -------------
