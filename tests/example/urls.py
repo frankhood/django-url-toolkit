@@ -1,0 +1,6 @@
+"""
+    example URL Configuration
+"""
+
+urlpatterns = [
+]
