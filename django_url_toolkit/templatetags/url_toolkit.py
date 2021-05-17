@@ -7,11 +7,6 @@ from django_url_toolkit.utils import make_absolute_url
 register = template.Library()
 
 
-@register.filter
-def prepend_site(value):
-    return make_absolute_url(value)
-
-
 class StaticFilesAbsoluteNode(StaticNode):
 
     def url(self, context):
