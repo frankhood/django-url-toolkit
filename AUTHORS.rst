@@ -5,7 +5,7 @@ Credits
 Development Lead
 ----------------
 
-* Frankhood <info@frankhood.it>
+* Frankhood Business Solutions s.r.l. <info@frankhood.it>
 
 Contributors
 ------------

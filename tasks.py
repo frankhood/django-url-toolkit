@@ -50,7 +50,7 @@ def docs(c):
     """
     c.run("rm -f docs/django-url-toolkit.rst")
     c.run("rm -f docs/modules.rst")
-    c.run("sphinx-apidoc -o docs/ django_url_toolkit")
+    c.run("sphinx-apidoc -o docs/ url_toolkit")
 
     c.run("sphinx-build -E -b html docs docs/_build")
     open_browser(path='docs/_build/html/index.html')
@@ -100,10 +100,10 @@ def release(c, bumpsize=''):
 
     c.run("bumpversion {bump} --no-input".format(bump=bumpsize))
 
-    import django_url_toolkit
+    import url_toolkit
     c.run("python setup.py sdist bdist_wheel")
     c.run("twine upload dist/*")
 
-    c.run('git tag -a {version} -m "New version: {version}"'.format(version=django_url_toolkit.__version__))
+    c.run('git tag -a {version} -m "New version: {version}"'.format(version=url_toolkit.__version__))
     c.run("git push --tags")
     c.run("git push origin master")

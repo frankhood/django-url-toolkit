@@ -1,6 +1,0 @@
-"""
-    example URL Configuration
-"""
-
-urlpatterns = [
-]

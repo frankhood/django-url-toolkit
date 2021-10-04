@@ -8,7 +8,7 @@ To use Django Url Tools in a project, add it to your `INSTALLED_APPS`:
 
     INSTALLED_APPS = (
         ...
-        'django_url_toolkit',
+        'url_toolkit',
         ...
     )
 

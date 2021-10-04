@@ -1,8 +1,8 @@
 from __future__ import absolute_import, print_function, unicode_literals
-from unittest import TestCase
 
+from django.test import TestCase, override_settings
 from django.contrib.sites.models import Site
-from django_url_toolkit.utils import make_absolute_url, get_current_site_absolute, append_querystring
+from url_toolkit.utils import make_absolute_url, get_current_site_absolute, append_querystring
 
 
 class UtilsTest(TestCase):
@@ -30,6 +30,13 @@ class UtilsTest(TestCase):
             url = '/test/'
             secure = None
             self.assertEqual(make_absolute_url(url, secure), 'http://' + str(self.site) + url)
+
+    @override_settings(SITE_BASE_URL="https://exemple.com/")
+    def test_make_absolute_url_with_SITE_BASE_URL(self):
+        with self.subTest("test_make_absolute_url_without_absolute_path_and_none_secure"):
+            url = '/test/'
+            secure = None
+            self.assertEqual(make_absolute_url(url, secure), "https://exemple.com" + url)
 
     def test_get_current_site_absolute(self):
         with self.subTest("test_get_current_site_absolute_without_request_and_secure_false"):

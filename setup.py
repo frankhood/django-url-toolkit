@@ -11,7 +11,7 @@ except ImportError:
 
 
 def get_version(*file_paths):
-    """Retrieves the version from django_url_toolkit/__init__.py"""
+    """Retrieves the version from url_toolkit/__init__.py"""
     filename = os.path.join(os.path.dirname(__file__), *file_paths)
     version_file = open(filename).read()
     version_match = re.search(r"^__version__ = ['\"]([^'\"]*)['\"]",
@@ -21,7 +21,7 @@ def get_version(*file_paths):
     raise RuntimeError('Unable to find version string.')
 
 
-version = get_version("django_url_toolkit", "__init__.py")
+version = get_version("url_toolkit", "__init__.py")
 
 
 if sys.argv[-1] == 'publish':
@@ -54,7 +54,7 @@ setup(
     author_email='a.mustich@frankhood.it',
     url='https://github.com/frankhood/django-url-toolkit',
     packages=[
-        'django_url_toolkit',
+        'url_toolkit',
     ],
     include_package_data=True,
     install_requires=requirements,

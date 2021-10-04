@@ -2,7 +2,7 @@ from django import template
 from django.contrib.staticfiles.templatetags.staticfiles import static
 from django.templatetags.static import StaticNode
 
-from django_url_toolkit.utils import make_absolute_url
+from url_toolkit.utils import make_absolute_url
 
 register = template.Library()
 
