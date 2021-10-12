@@ -46,7 +46,7 @@ history = open('HISTORY.rst').read().replace('.. :changelog:', '')
 requirements = open('requirements.txt').readlines()
 
 setup(
-    name='url-toolkit',
+    name='django-url-toolkit',
     version=version,
     description="""Your project description goes here""",
     long_description=readme + '\n\n' + history,
