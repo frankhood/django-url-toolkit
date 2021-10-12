@@ -3,6 +3,11 @@
 History
 -------
 
+0.1.3 (2021-10-12)
+++++++++++++++++++
+
+* Fix import of static from django.templatetags.static.
+
 0.1.2 (2021-10-04)
 ++++++++++++++++++
 
