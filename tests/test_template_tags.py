@@ -1,7 +1,6 @@
 from __future__ import absolute_import, print_function, unicode_literals
 
 from unittest import TestCase
-
 from django.contrib.sites.models import Site
 from django.template import Context, Template
 
