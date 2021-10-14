@@ -1,4 +1,4 @@
-## Example Project for django_url_toolkit
+## Example Project for url_toolkit
 
 This example is provided as a convenience feature to allow potential users to try the app straight from the app repo without having to create a django project.
 
@@ -9,7 +9,7 @@ To run this example, follow these instructions:
 1. Navigate to the root directory of your application (same as `manage.py`)
 2. Install the requirements for the package:
 
-		pip install -r requirements_dev.txt
+		pip install -r requirements.txt
 
 3. Make and apply migrations
 

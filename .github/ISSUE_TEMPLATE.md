@@ -1,7 +1,7 @@
-* Django Url Tools version: 1.0
-* Django version: 2.1
-* Python version: 3.6.5
-* Operating System: *
+* Django Url Toolkit version:
+* Django version:
+* Python version:
+* Operating System:
 
 ### Description
 

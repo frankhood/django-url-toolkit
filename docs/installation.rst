@@ -8,5 +8,5 @@ At the command line::
 
 Or, if you have virtualenvwrapper installed::
 
-    $ mkvirtualenv your-project-name
+    $ mkvirtualenv django-url-toolkit
     $ pip install django-url-toolkit

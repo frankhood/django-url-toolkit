@@ -46,7 +46,7 @@ output/*/index.html
 # Sphinx
 docs/_build
 
-# DB
-db.sqlite3
 
+.coverage
+.tox
 .python-version

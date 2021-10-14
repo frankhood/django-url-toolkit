@@ -3,7 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to Django Url Tools's documentation!
+Welcome to Django Url Toolkit's documentation!
 =================================================================
 
 Contents:

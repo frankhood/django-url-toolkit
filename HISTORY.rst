@@ -3,6 +3,11 @@
 History
 -------
 
+0.1.9 (2021-10-14)
+++++++++++++++++++
+
+* Fix tox configurations.
+
 0.1.8 (2021-10-14)
 ++++++++++++++++++
 
@@ -28,4 +33,4 @@ History
 0.1.0 (2021-04-14)
 ++++++++++++++++++
 
-* First release on PyPI.
+* First release on GitHub.

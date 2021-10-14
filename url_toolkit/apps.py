@@ -2,5 +2,5 @@
 from django.apps import AppConfig
 
 
-class UrlToolsConfig(AppConfig):
+class UrlToolkitConfig(AppConfig):
     name = 'url_toolkit'

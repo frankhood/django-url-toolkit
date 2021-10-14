@@ -11,7 +11,8 @@
 # All configuration values have a default; values that are commented out
 # serve to show the default.
 
-import sys, os
+import os
+import sys
 
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
@@ -46,8 +47,8 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'Django Url Tools'
-copyright = u'2021, Frankhood Business Solutions s.r.l.'
+project = u'Django Url Toolkit'
+copyright = u'2021, FrankHood Business Solutions srl'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -192,8 +193,8 @@ latex_elements = {
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title, author, documentclass [howto/manual]).
 latex_documents = [
-  ('index', 'django-url-toolkit.tex', u'Django Url Tools Documentation',
-   u'Frankhood Business Solutions s.r.l.', 'manual'),
+  ('index', 'django-url-toolkit.tex', u'Django Url Toolkit Documentation',
+   u'FrankHood Business Solutions srl', 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
@@ -222,8 +223,8 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    ('index', 'django-url-toolkit', u'Django Url Tools Documentation',
-     [u'Frankhood Business Solutions s.r.l.'], 1)
+    ('index', 'django-url-toolkit', u'Django Url Toolkit Documentation',
+     [u'FrankHood Business Solutions srl'], 1)
 ]
 
 # If true, show URL addresses after external links.
@@ -236,8 +237,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-  ('index', 'django-url-toolkit', u'Django Url Tools Documentation',
-   u'Frankhood Business Solutions s.r.l.', 'django-url-toolkit', 'One line description of project.',
+  ('index', 'django-url-toolkit', u'Django Url Toolkit Documentation',
+   u'FrankHood Business Solutions srl', 'django-url-toolkit', 'One line description of project.',
    'Miscellaneous'),
 ]
 

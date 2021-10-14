@@ -21,7 +21,7 @@ def get_version(*file_paths):
     raise RuntimeError('Unable to find version string.')
 
 
-version = get_version("url_toolkit", "__init__.py")
+version = get_version("url_toolkit/__init__.py")
 
 
 if sys.argv[-1] == 'publish':
@@ -48,10 +48,10 @@ requirements = open('requirements.txt').readlines()
 setup(
     name='django-url-toolkit',
     version=version,
-    description="""Your project description goes here""",
+    description="""A useful toolkit to manage urls and absolute paths in your django project""",
     long_description=readme + '\n\n' + history,
-    author='Antonio Mustich',
-    author_email='a.mustich@frankhood.it',
+    author='FrankHood Business Solutions srl',
+    author_email='info@frankhood.it',
     url='https://github.com/frankhood/django-url-toolkit',
     packages=[
         'url_toolkit',
@@ -63,14 +63,14 @@ setup(
     keywords='django-url-toolkit',
     classifiers=[
         'Development Status :: 3 - Alpha',
-        'Framework :: Django :: 2.1',
+        'Framework :: Django :: 2.2',
+        'Framework :: Django :: 3.2',
         'Intended Audience :: Developers',
         'License :: OSI Approved :: BSD License',
         'Natural Language :: English',
-        'Programming Language :: Python :: 2',
-        'Programming Language :: Python :: 2.7',
-        'Programming Language :: Python :: 3',
-        'Programming Language :: Python :: 3.5',
         'Programming Language :: Python :: 3.6',
+        'Programming Language :: Python :: 3.7',
+        'Programming Language :: Python :: 3.8',
+        'Programming Language :: Python :: 3.9',
     ],
 )

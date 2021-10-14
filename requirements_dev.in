@@ -1,0 +1,8 @@
+importlib-metadata<4.3
+invoke
+wheel
+zest.releaser
+bumpversion
+
+
+Django>2.2
