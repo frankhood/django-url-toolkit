@@ -48,5 +48,3 @@ docs/_build
 
 # DB
 db.sqlite3
-
-.python-version
