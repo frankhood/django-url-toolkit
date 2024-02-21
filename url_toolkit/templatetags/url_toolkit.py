@@ -7,14 +7,13 @@ register = template.Library()
 
 
 class StaticFilesAbsoluteNode(StaticNode):
-
     def url(self, context):
         path = self.path.resolve(context)
         static_url = static(path)
         return make_absolute_url(static_url)
 
 
-@register.tag('static_absolute')
+@register.tag("static_absolute")
 def do_static_absolute(parser, token):
     """
     '{% load url_toolkit %}'

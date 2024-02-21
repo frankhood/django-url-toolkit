@@ -8,7 +8,7 @@ from tests import settings as test_settings
 
 @receiver(setting_changed)
 def app_settings_reload_handler(**kwargs):
-    if kwargs['setting'] in [
-        'SITE_BASE_URL',
+    if kwargs["setting"] in [
+        "SITE_BASE_URL",
     ]:
         importlib.reload(test_settings)
